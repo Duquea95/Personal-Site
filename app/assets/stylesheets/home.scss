@@ -2,21 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
-  background-color:rgba(222, 200, 40, .4);
-  div#navbarDiv{
+  background-color: rgba(248, 248, 248, 1);
 
-    nav{
+  nav.navbar{
+    border-style: none;
+
+    div.container-fluid{
+      min-height: 35vh;
+      line-height: 35vh;
       text-align: center;
-      background-color: green;
-      min-height: 20vh;
 
-      ul#navList{
+      ul.navbar-nav{
+        float: none;
+        display: inline-block;
+        vertical-align: bottom;
 
-        .nav_item{
-          display: inline;
-          list-style: none;
-        }
       }
     }
   }
+
 }
