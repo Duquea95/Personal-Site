@@ -1,5 +1,12 @@
 <div class="container-fluid">
   <div id="contact-div">
-    <textarea name="name" rows="8" cols="40">Contact me at Duqueawd@gmail.com</textarea>
+    Contact me at Duqueawd@gmail.com
+
+    <%= form_tag("/", method: "put") do %>
+      <%= label_tag(:input, "Write Something") %>
+      <%= text_field_tag(:input) %>
+      <%= submit_tag("Send") %>
+    <% end %>
+
   </div>
 </div>
