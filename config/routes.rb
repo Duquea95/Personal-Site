@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   # Made index homepage
-  root "home#index"
+  root "messages#index"
 
+  resources :messages
 end
