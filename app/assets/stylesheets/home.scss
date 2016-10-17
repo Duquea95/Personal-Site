@@ -2,181 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-  background-color: #adb09d;
+// The follow media queries apply for both landscape & portrait
+// iPad Media Queries
 
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  { /* STYLES GO HERE */}
 
-  div#logo-div{
-    max-width: 10vw;
-    margin: 0 auto;
+// Ipad Mini Media Queries
 
-    img#logo{
-      max-width: 20vw;
-      max-height: 20vh;
-      display: inline-block;
-      position: static;
-    }
-  }
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
-  div.container-fluid{
-    ul.nav{
-      max-width: 50vw;
-      margin: auto;
-      display: flex;
+// IPhone 6 Media Queries
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) { /* STYLES GO HERE */}
 
-      li{
-        flex-grow: 1;
-        text-align: center;
+// IPhone 6 Plus Media Queries
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) { /* STYLES GO HERE */}
 
-        a{
-          font-size: 16px;
-          font-family: 'Source Code Pro', monospace;
-          font-weight: bolder;
-          color: black;
-        }
-      }
-    }
+// iPhone 5 Media Queries
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) { /* STYLES GO HERE */}
 
-    .nav > li.active > a{
-      text-decoration: underline;
-    }
-
-    .nav > li.disabled > a:focus{
-      text-decoration: none;
-      color:black;
-    }
-
-    .nav > li.disabled > a:active{
-      pointer-events: none;
-      color:black;
-    }
-    .nav > li.disabled > a:hover{
-      color:black;
-    }
-  }
-
-  div#aboutMe{
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 8vh;
-    max-width: 100vw;
-    height: 383px;
-
-    div#aboutPic{
-      flex-grow: 1;
-      margin-left: 14vw;
-      margin-right: 4vw;
-      margin-top: 4vw;
-      height: 351.11px;
-
-      img{
-        max-width: 142px;
-        border-radius: 300px;
-      }
-    }
-
-    div#aboutText{
-      height: 351.11px;
-      flex-grow: 2;
-      text-align: left;
-      margin-right: 22vw;
-      font-size: 16px;
-
-      p{
-        font-size: 18px;
-        line-height: 4vh;
-        margin-bottom: 0;
-        max-width: 580px;
-        font-weight: bolder;
-        font-family: 'Lora', serif;
-      }
-    }
-  }
-
-  div#portfolio-div{
-    height: 20vw;
-    display: flex;
-    margin-top: 4vh;
-
-    div.project-display{
-      width: 40vw;
-      height: 30vh;
-      display: inline-block;
-      text-align: center;
-      flex-grow: 1;
-
-      .project{
-        max-width: 30vw;
-      }
-
-      div.project-cards{
-        max-width: 384px;
-        background-color:rgba(0,0,0,.1);
-        margin: 0 auto;
-
-        h2{
-          padding-top: 2vh;
-          font-family: 'Lora', serif;
-        }
-
-        p{
-          margin-bottom: 0;
-          padding: 0 10px;
-          font-size: 16px;
-          font-family: 'Lora', serif;
-          font-weight: bolder;
-        }
-      }
-    }
-  }
-
-  div#contact-div{
-    margin: 0 auto;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    height: 383px;
-    margin-top: 5vh;
-    max-width: 100vw;
-
-    div.row{
-      margin-left: 8vw;
-      margin-right: 8vw;
-      padding-top: 8vh;
-      height: 29vh;
-      display: flex;
-
-      span.tile{
-        background-color: #e7e1dd;
-        display: inline-block;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-        padding-top: 5vh;
-        width: 25vw;
-
-        a.link{
-          font-size: 22px;
-          color: black;
-          font-weight: bolder;
-          font-family: 'Lora', serif;
-
-
-        }
-        a.link:hover{
-          color: black;
-          text-decoration: none;
-
-        }
-      }
-      span.tile:hover{
-        background-color: #C3C9A0;
-        cursor: pointer;
-      }
-    }
-
-  }
+* {
+    box-sizing: border-box;
 }
