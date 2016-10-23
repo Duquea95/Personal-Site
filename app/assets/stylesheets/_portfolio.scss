@@ -1,0 +1,43 @@
+div#portfolio-div{
+  height: 20vw;
+  margin-top: 4vh;
+  display: flex;
+  color: black;
+
+  div.project-display{
+    width: 40vw;
+    height: 30vh;
+    display: inline-block;
+    text-align: center;
+    flex-grow: 1;
+
+    .project{
+      max-width: 30vw;
+    }
+
+    div.project-cards{
+      max-width: 432px;
+      max-height: 169.75px;
+      height: 100%;
+      margin: 0 auto;
+
+      h2{
+        padding-top: 2vh;
+        letter-spacing: .1em;
+        font-family: 'Lora', serif;
+        // background-color:rgba(0,0,0,.1);
+      }
+
+    //   p{
+    //     background-color:rgba(0,0,0,.1);
+    //     margin-bottom: 0;
+    //     letter-spacing: .1em;
+    //     height: 100%;
+    //     padding: 0 10px;
+    //     font-size: 16px;
+    //     font-family: 'Lora', serif;
+    //     font-weight: bolder;
+    //   }
+    }
+  }
+}
