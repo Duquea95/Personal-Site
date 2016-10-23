@@ -5,8 +5,6 @@ div#portfolio-div{
   color: black;
 
   div.project-display{
-    width: 40vw;
-    height: 30vh;
     display: inline-block;
     text-align: center;
     flex-grow: 1;
@@ -16,8 +14,7 @@ div#portfolio-div{
     }
 
     div.project-cards{
-      max-width: 432px;
-      max-height: 169.75px;
+    //   max-height: 169.75px;
       height: 100%;
       margin: 0 auto;
 
