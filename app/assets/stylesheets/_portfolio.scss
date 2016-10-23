@@ -1,26 +1,25 @@
 div#portfolio-div{
   height: 20vw;
   margin-top: 4vh;
-  display: flex;
   color: black;
 
   div.project-display{
-    display: inline-block;
-    text-align: center;
-    flex-grow: 1;
+    // display: inline-block;
+    // text-align: center;
 
     .project{
-      max-width: 30vw;
+      max-width: 28vw;
     }
 
-    div.project-cards{
-    //   max-height: 169.75px;
-      height: 100%;
-      margin: 0 auto;
+    // div.project-cards{
+    // //   max-height: 169.75px;
+    //   height: 100%;
+    //   margin: 0 auto;
 
       h2{
         padding-top: 2vh;
         letter-spacing: .1em;
+        text-align: center;
         font-family: 'Lora', serif;
         // background-color:rgba(0,0,0,.1);
       }
@@ -35,6 +34,6 @@ div#portfolio-div{
     //     font-family: 'Lora', serif;
     //     font-weight: bolder;
     //   }
-    }
+    // }
   }
 }
