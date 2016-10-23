@@ -40,6 +40,9 @@ body{
     .nav > li.active > a{
       text-decoration: underline;
     }
+    .nav > li.disabled > a{
+      text-decoration: line-through;
+    }
 
     .nav > li.disabled > a:focus{
       text-decoration: none;
@@ -56,16 +59,17 @@ body{
   }
 
   div#aboutMe{
-    text-align: center;
-    margin: 0 auto;
+    // text-align: center;
     margin-top: 8vh;
     max-width: 100vw;
-    height: 383px;
+    display: flex;
 
     div#aboutPic{
-      margin-top: 4vw;
+    //   margin-top: 4vw;
       height: 351.11px;
-      max-width: 50vw;
+    //   max-width: 50vw;
+      background-color: grey;
+      flex-grow: 1;
 
       img{
         max-width: 142px;
@@ -74,17 +78,19 @@ body{
     }
 
     div#aboutText{
+      flex-grow: 2;
+      background-color: white;
       height: 351.11px;
-      flex-grow: 1;
       text-align: left;
       font-size: 16px;
+    //   max-width: 50vw;
 
       p{
-        font-size: 18px;
-        line-height: 4vh;
-        margin-bottom: 0;
-        max-width: 400px;
-        font-weight: bolder;
+        // font-size: 18px;
+        // line-height: 4vh;
+        // margin-bottom: 0;
+        // max-width: 400px;
+        // font-weight: bolder;
         font-family: 'Lora', serif;
       }
     }
@@ -93,6 +99,7 @@ body{
   div#portfolio-div{
     height: 20vw;
     margin-top: 4vh;
+    display: flex;
 
     div.project-display{
       width: 40vw;
