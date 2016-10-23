@@ -1,45 +1,63 @@
 $(function() {
     $h1 = $("h1");
+    $serviceText = $("p.service");
+    $experienceText = $("p.experience");
+    $whoAmIText = $("p.whoAmI");
+    $extraText = $("p.extra");
+    $service  = $("h1#service");
+    $experience = $("h1#experience");
+    $whoAmI = $("h1#whoAmI");
+    $extra = $("h1#extra");
+
 
     $h1.on("click",function(){
-        console.log(this.dataset.type);
+        var value = $(this).attr("id");
 
-        switch(this.dataset.type) {
-            case "service":
-                var datatype = this.dataset.type
-                $p = $("p").hidden
+        switch(value){
+        case "service":
+            $service.addClass("underline");
+            $extra.removeClass("underline");
+            $whoAmI.removeClass("underline");
+            $experience.removeClass("underline");
+            $experienceText.addClass("hidden");
+            $whoAmIText.addClass("hidden");
+            $extraText.addClass("hidden");
+            $serviceText.removeClass("hidden");
+        break
 
-                console.log(datatype);
-                break;
+        case "experience":
+            $service.removeClass("underline");
+            $extra.removeClass("underline");
+            $whoAmI.removeClass("underline");
+            $experience.addClass("underline");
+            $serviceText.addClass("hidden");
+            $whoAmIText.addClass("hidden");
+            $extraText.addClass("hidden");
+            $experienceText.removeClass("hidden");
+        break
 
-            case "experience":
-                var datatype = this.dataset.type
-                $p = $("p").hidden
+        case "whoAmI":
+            $service.removeClass("underline");
+            $extra.removeClass("underline");
+            $whoAmI.addClass("underline");
+            $experience.removeClass("underline");
+            $serviceText.addClass("hidden");
+            $experienceText.addClass("hidden");
+            $extraText.addClass("hidden");
+            $whoAmIText.removeClass("hidden")
+        break
 
-                console.log(datatype);
-
-                // if($("p").dataset.type == "experience"){
-                //     console.log(this);
-                //     // this.toggle("hidden");
-                // };
-
-                break;
-
-            case "whoAmI":
-                var datatype = this.dataset.type
-                $p = $("p").hidden
-
-                console.log(datatype);
-                break;
-
-            case "extra":
-                var datatype = this.dataset.type
-                $p = $("p").hidden
-
-                console.log(datatype);
-                break;
-
+        case "extra":
+            $service.removeClass("underline");
+            $extra.addClass("underline");
+            $whoAmI.removeClass("underline");
+            $experience.removeClass("underline");
+            $serviceText.addClass("hidden");
+            $experienceText.addClass("hidden");
+            $whoAmIText.addClass("hidden");
+            $extraText.removeClass("hidden")
+        break
         }
-    })
+    });
 
 });

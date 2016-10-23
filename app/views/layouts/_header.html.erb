@@ -1,22 +1,22 @@
 <!-- This is the main page navigation bar -->
 <div class="container-fluid">
 
-  <div id="logo-div">
-    <%= link_to image_tag("logo", :id => "logo"), '/' %>
-  </div>
+    <div id="logo-div" class="col-lg-4 col-lg-offset-4">
+        <%= link_to image_tag("logo", :id => "logo", :class => "img-responsive"), '/' %>
+    </div>
 
   <!-- <nav class="navbar nav-tabs" role="navigation"> -->
 
-    <div class="container-fluid" role="navigation">
+    <div class="container-fluid col-lg-12" role="navigation">
       <!-- Collect the nav links, forms, and other content for toggling -->
 
       <div class="collapse navbar-collapse">
 
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="nav-item active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
-          <li role="presentation" class="nav-item"><a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">Portfolio</a></li>
-          <li role="presentation" class="nav-item disabled"><a href="#photography" aria-controls="photography" role="tab" data-toggle="tab">Coming Soon</a></li>
-          <li role="presentation" class="nav-item"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a></li>
+          <li role="presentation" class="nav-item active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">ABOUT</a></li>
+          <li role="presentation" class="nav-item"><a href="#portfolio" aria-controls="portfolio" role="tab" data-toggle="tab">PORTFOLIO</a></li>
+          <li role="presentation" class="nav-item disabled"><a href="#photography" aria-controls="photography" role="tab" data-toggle="tab">UPDATING</a></li>
+          <li role="presentation" class="nav-item"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">CONTACT</a></li>
         </ul>
 
       </div><!-- /.navbar-collapse -->
