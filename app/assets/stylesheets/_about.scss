@@ -24,14 +24,30 @@ div#aboutMe{
     text-align: center;
 
     h1{
-      // background-color: #bec8c9;
+      color: black;
       cursor: pointer;
       font-size: 24px;
       margin-top: 3px;
       letter-spacing: .15em;;
+      position: relative;
+      text-decoration: none;
     }
     h1.underline{
-        text-decoration: underline;
+      text-decoration: underline;
+    //   transition: 2s ease-in;
     }
+    // h1.underline:after{
+    //     // text-decoration: underline;
+    //     // position: absolute;
+    //     color: black;
+    //     left: 0;
+    //     content: '';
+    //     width: 0;
+    //     transition: 3s;
+    // }
+    // h1.underline:hover:after{
+    //     width: 100%;
+    // }
+
   }
 }
